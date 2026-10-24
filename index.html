@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Five &amp; Dime General Store | Santa Fe Plaza</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bevan&family=Libre+Franklin:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f6ecd6;
+  --paper:#fbf5e6;
+  --ink:#2a1a14;
+  --red:#a63a22;
+  --deep:#5e1f12;
+  --chile:#2c5a37;
+  --corn:#f0b92e;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"Libre Franklin",system-ui,sans-serif;font-size:1.125rem;line-height:1.6}
+h1,h2,h3{font-family:Bevan,Georgia,serif;font-weight:400;line-height:1.1;margin:0}
+p{margin:0 0 1em}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+
+.preview{background:#111;color:#fff;font-size:.95rem;line-height:1.4;text-align:center;padding:10px 16px;font-weight:600}
+
+/* hero */
+.hero{display:grid}
+.hero-main{padding:48px 22px 44px;max-width:680px;margin:0 auto;width:100%}
+.hero h1{font-size:clamp(2.6rem,9vw,5.2rem);color:var(--red)}
+.hero h1 span{display:block;color:var(--ink);font-size:.5em;margin-top:.3em}
+.lede{font-size:1.3rem;margin:1.2em 0 1.6em;max-width:30em}
+.call{display:inline-block;background:var(--red);color:#fff;text-decoration:none;font-weight:800;font-size:1.6rem;padding:18px 30px;letter-spacing:.01em}
+.call:hover{background:var(--deep)}
+.where{margin-top:1.4em;font-size:1.25rem;font-weight:600}
+.where small{display:block;font-weight:400;font-size:1.05rem}
+.where a{font-weight:600}
+.sign{background:var(--chile);color:#fff;padding:44px 22px}
+.sign div{max-width:680px;margin:0 auto}
+.sign p{margin:0}
+.sign .big{font-family:Bevan,Georgia,serif;font-size:clamp(2rem,6vw,3.4rem);line-height:1.1;margin-bottom:.5em}
+.sign .big em{font-style:normal;color:var(--corn)}
+.sign .small{font-size:1.2rem;max-width:26em}
+
+@media(min-width:900px){
+  .hero{grid-template-columns:1.25fr 1fr;min-height:560px}
+  .hero-main{padding:80px 56px 72px 22px}
+  .sign{display:flex;align-items:center;padding:60px 48px}
+}
+
+/* frito pie */
+.pie{background:var(--corn);padding:56px 0}
+.pie-grid{display:grid;gap:32px}
+.pie h2{font-size:clamp(2rem,5vw,3rem);color:var(--deep)}
+.pie p{font-size:1.2rem}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:52px 1fr;align-items:baseline;border-top:2px solid var(--deep);padding:16px 0;font-size:1.3rem;font-weight:600}
+.steps li:last-child{border-bottom:2px solid var(--deep)}
+.steps li:before{content:counter(s);font-family:Bevan,serif;font-size:1.8rem;color:var(--deep)}
+@media(min-width:900px){
+  .pie{padding:80px 0}
+  .pie-grid{grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+}
+
+/* shelves */
+.shelves{padding:64px 0 24px}
+.shelves h2{font-size:clamp(2rem,5vw,3.2rem);max-width:15em;margin-bottom:1em}
+.aisles{display:grid;gap:0}
+.aisle{border-top:2px solid var(--ink);padding:22px 0 26px;display:grid;gap:6px}
+.aisle h3{font-size:1.5rem;color:var(--red)}
+.aisle p{margin:0;font-size:1.3rem;line-height:1.5}
+.rest{font-size:1.2rem;margin-top:12px;max-width:40em}
+@media(min-width:900px){
+  .shelves{padding:96px 0 40px}
+  .aisle{grid-template-columns:300px 1fr;gap:40px;align-items:baseline}
+  .aisle p{font-size:1.5rem}
+}
+
+/* history */
+.history{background:var(--deep);color:#fbeedd;padding:64px 0;margin-top:48px}
+.history h2{font-size:clamp(2rem,5vw,3.2rem);color:var(--corn);margin-bottom:1em;max-width:14em}
+.tl{display:grid;gap:30px}
+.tl div{display:grid;gap:4px}
+.tl b{font-family:Bevan,serif;font-weight:400;font-size:2.2rem;color:var(--corn);line-height:1}
+.tl p{margin:0;font-size:1.2rem;max-width:34em}
+@media(min-width:900px){
+  .history{padding:96px 0}
+  .tl{grid-template-columns:1fr 1fr 1fr;gap:56px}
+  .tl b{font-size:3.4rem}
+}
+
+/* community */
+.community{padding:64px 0}
+.community-in{display:grid;gap:20px}
+.community h2{font-size:clamp(1.9rem,4.5vw,2.8rem)}
+.community p{font-size:1.3rem;max-width:32em}
+@media(min-width:900px){
+  .community{padding:96px 0}
+  .community-in{grid-template-columns:5fr 6fr;gap:80px;align-items:start}
+}
+
+/* stores */
+.stores{background:var(--paper);padding:64px 0;border-top:4px solid var(--ink)}
+.stores h2{font-size:clamp(2rem,5vw,3rem);margin-bottom:.4em}
+.stores .intro{font-size:1.2rem;max-width:34em;margin-bottom:32px}
+.home{background:var(--red);color:#fff;padding:32px 24px;margin-bottom:12px}
+.home h3{font-size:1.9rem;margin-bottom:.3em}
+.home p{margin:0 0 .3em;font-size:1.25rem}
+.home a.tel{display:inline-block;margin-top:10px;font-family:Bevan,serif;font-size:2rem;text-decoration:none;color:var(--corn)}
+.list{list-style:none;margin:0;padding:0;display:grid}
+.list li{border-bottom:1px solid #b9a98a;padding:18px 0}
+.list h3{font-size:1.4rem;margin-bottom:.15em}
+.list .area{font-weight:600;color:var(--chile)}
+.list .addr{display:block;font-size:1.1rem}
+.list a.tel{font-weight:800;font-size:1.3rem;color:var(--ink);text-decoration-thickness:2px;text-underline-offset:4px;display:inline-block;padding:4px 0}
+.film{margin-top:32px;font-size:1.2rem;max-width:34em}
+@media(min-width:900px){
+  .stores{padding:96px 0}
+  .home{display:grid;grid-template-columns:1fr auto;align-items:center;padding:44px 48px;gap:24px}
+  .home a.tel{margin:0;font-size:3rem}
+  .list{grid-template-columns:1fr 1fr 1fr;column-gap:48px}
+}
+
+footer{background:var(--ink);color:#f3e8d2;padding:36px 0 44px;font-size:1.05rem}
+footer p{margin:0 0 .4em}
+footer strong{font-family:Bevan,serif;font-weight:400;font-size:1.4rem;color:var(--corn)}
+footer a{color:#fff}
+a:focus-visible{outline:3px solid var(--corn);outline-offset:3px}
+</style>
+</head>
+<body>
+
+<div class="preview">Concept preview made by Purcell Ventures for Five &amp; Dime General Store. Not the official site.</div>
+
+<header class="hero">
+  <div class="hero-main">
+    <h1>Five &amp; Dime General Store <span>On the Santa Fe Plaza</span></h1>
+    <p class="lede">Souvenirs, cold drinks, sunscreen, batteries and Frito Pie, in the space where the Plaza Woolworth's stood.</p>
+    <a class="call" href="tel:+15059921800">Call 505-992-1800</a>
+    <p class="where">58 E. San Francisco St., Santa Fe, NM
+      <small><a href="https://www.google.com/maps/search/?api=1&amp;query=58+E.+San+Francisco+St.+Santa+Fe+NM">Open in maps</a></small>
+    </p>
+  </div>
+  <div class="sign">
+    <div>
+      <p class="big">Woolworth's, 1935.<br><em>Five &amp; Dime, May 1998.</em></p>
+      <p class="small">Locals and visitors loved the old Plaza store. When it closed, its manager, its employees and its best sellers moved into a third of the old space.</p>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="pie" id="frito-pie">
+  <div class="wrap pie-grid">
+    <div>
+      <h2>Frito Pie, served with a spoon</h2>
+      <p>About 36,000 people a year eat one at the snack bar or on a bench in the Santa Fe Plaza.</p>
+      <p>Teresa Hernandez, a Woolworth's employee, invented this bag version in 1962.</p>
+    </div>
+    <ol class="steps">
+      <li>Slit open the side of a small bag of Fritos corn chips.</li>
+      <li>Ladle in homemade chili.</li>
+      <li>Top with grated cheddar and chopped onions.</li>
+      <li>Serve with a spoon.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="shelves" id="shelves">
+  <div class="wrap">
+    <h2>Sunscreen, batteries, post cards and a cold drink</h2>
+    <div class="aisles">
+      <div class="aisle"><h3>Bring home</h3><p>Souvenirs, post cards, tote bags, hats, clothing items and other tourist items.</p></div>
+      <div class="aisle"><h3>Out in the sun</h3><p>Sunglasses, sunscreen, hats and cold drinks.</p></div>
+      <div class="aisle"><h3>Medicine cabinet</h3><p>Band-aids and non-prescription drugs, including a cold remedy or an aspirin.</p></div>
+      <div class="aisle"><h3>Desk and backpack</h3><p>Office supplies, school supplies, batteries and travel items.</p></div>
+      <div class="aisle"><h3>Snacks and toys</h3><p>Snacks, candy, toys and cosmetics.</p></div>
+    </div>
+    <p class="rest">Plus the everyday convenience store necessities, like toothpaste and an extension cord.</p>
+  </div>
+</section>
+
+<section class="history" id="history">
+  <div class="wrap">
+    <h2>A Woolworth's closed. The best sellers stayed.</h2>
+    <div class="tl">
+      <div><b>1935</b><p>The Woolworth's on the Santa Fe Plaza. Locals and tourists treasure it from 1935 on.</p></div>
+      <div><b>Aug 1997</b><p>Woolworth's announces it is closing all US stores, including the one on the Plaza.</p></div>
+      <div><b>May 1998</b><p>Deborah Potter, her husband Earl Potter and Mike Collins, a Woolworth's manager for 25 years, move the best selling items, the fixtures and the employees into a third of the old space. The first Five &amp; Dime General Store opens there.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="community" id="community">
+  <div class="wrap community-in">
+    <h2>A battery or an aspirin, a short walk away</h2>
+    <div>
+      <p>Each store keeps everyday needs in reach of locals and of people who work in busy tourist areas. A battery, an aspirin, an extension cord, toothpaste, a cold remedy.</p>
+      <p>Each store also provides jobs for over a dozen people.</p>
+    </div>
+  </div>
+</section>
+
+<section class="stores" id="stores">
+  <div class="wrap">
+    <h2>Nine stores</h2>
+    <p class="intro">The first is on the Santa Fe Plaza. The other eight are in busy visitor districts around the country.</p>
+
+    <div class="home">
+      <div>
+        <h3>Santa Fe, NM</h3>
+        <p>58 E. San Francisco St.<br>The historic Santa Fe Plaza. The first store.</p>
+      </div>
+      <a class="tel" href="tel:+15059921800">505-992-1800</a>
+    </div>
+
+    <ul class="list">
+      <li><h3>San Antonio, TX</h3><span class="area">The famous Riverwalk</span><span class="addr">512 Riverwalk</span><a class="tel" href="tel:+12102124825">210-212-4825</a></li>
+      <li><h3>Branson, MO</h3><span class="area">Branson Landing</span><span class="addr">105 Branson Landing</span><a class="tel" href="tel:+14173481955">417-348-1955</a></li>
+      <li><h3>San Diego, CA</h3><span class="area">Old Town</span><span class="addr">2501 San Diego Avenue</span><a class="tel" href="tel:+16196923875">619-692-3875</a></li>
+      <li><h3>Monterey, CA</h3><span class="area">Cannery Row</span><span class="addr">685 Cannery Row #113</span><a class="tel" href="tel:+18316569146">831-656-9146</a></li>
+      <li><h3>Charleston, SC</h3><span class="area">Historic Market Street</span><span class="addr">99 South Market Street</span><a class="tel" href="tel:+18436410073">843-641-0073</a></li>
+      <li><h3>Savannah, GA</h3><span class="area">Historic River Street</span><span class="addr">411 E. River Street</span><a class="tel" href="tel:+19123492059">912-349-2059</a></li>
+      <li><h3>Saint Augustine, FL</h3><span class="area">Old town</span><span class="addr">107 Saint George Street</span><a class="tel" href="tel:+19043425651">904-342-5651</a></li>
+      <li><h3>Jackson, WY</h3><span class="area">Jackson Town Square</span><span class="addr">75 N. Cache St.</span><a class="tel" href="tel:+13072495005">307-249-5005</a></li>
+    </ul>
+
+    <p class="film">A film about the company, <em>A Five and Dime Story</em>, is on YouTube.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Five &amp; Dime General Store</strong></p>
+    <p>58 E. San Francisco St., Santa Fe, NM &middot; <a href="tel:+15059921800">505-992-1800</a></p>
+    <p>Concept preview made by Purcell Ventures. Not the official site.</p>
+  </div>
+</footer>
+
+</body>
+</html>
